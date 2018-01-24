@@ -94,7 +94,10 @@
   color: #000;
 }
 
-.pettle-name{
-  margin: 5px;
+.myname{
+  margin-top: 10px;
   color: #BDCDDE;
+}
+.date{
+  margin-top: 5px;
 }

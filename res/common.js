@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log("dom loaded")
 
     selected_load()
+    setTimeout(refresh_content, 10)
+
+    new Clipboard('.copy-btn');
 })
 
 var G_SELECTED_COLOR_ARR = []
@@ -29,7 +32,13 @@ function ui_add_selected(color_string, ani) {
     newNode.style.display = 'flex'
     newNode.childNodes[1].style.backgroundColor = color_string //注意childnodes中间有 text 间隔，所以是1
     newNode.setAttribute('id', color_string.slice(1))
-    newNode.setAttribute('onclick', 'on_color_delete("' + color_string + '")')
+    newNode.childNodes[7].setAttribute('onclick', 'on_color_delete("' + color_string + '")')
+    newNode.childNodes[5].setAttribute('data-clipboard-text', color_string)
+    newNode.childNodes[5].setAttribute('onclick', 'on_color_copy()')
+
+    newNode.childNodes[1].setAttribute('data-clipboard-text', color_string)
+    newNode.childNodes[1].setAttribute('onclick', 'on_color_copy()')
+
 
     if (ani){
         setTimeout(function () { //enable animcation
@@ -91,3 +100,11 @@ function on_color_delete(color_string) {
     document.getElementById(color_string.slice(1)).style.height = "0px"
     document.getElementById(color_string.slice(1)).style.opacity = 0
 }
+
+function on_color_copy() {
+    console.log('play copy sound')
+
+    var audio = document.getElementsByTagName("audio")[0];
+    audio.play();
+}
+

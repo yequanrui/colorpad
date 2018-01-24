@@ -15,6 +15,8 @@ function run_items() {
 }
 
 function itemer(order, id, code, date, name) {
+  console.log(name)
+
   var newitem = $('#bank .item').clone().appendTo('#feed_wrapper').attr('data-order', order).attr('data-id', id).attr('data-code', code);
   var c1 = code.substring(0,6);
   var c2 = code.substring(6,12);
@@ -22,16 +24,16 @@ function itemer(order, id, code, date, name) {
   var c4 = code.substring(18,24);
   // newitem.find('.palette a').attr('href', '/c/'+id);
   // newitem.find('.palette a').attr('href', '/c/'+id)
-  newitem.find('.c1').css('background-color', '#'+c1).find('span').text('#'+c1);
-  newitem.find('.c2').css('background-color', '#'+c2).find('span').text('#'+c2);
-  newitem.find('.c3').css('background-color', '#'+c3).find('span').text('#'+c3);
-  newitem.find('.c4').css('background-color', '#'+c4).find('span').text('#'+c4);
-  newitem.find('.like span').text(name);
-  newitem.find('.like').attr('onclick','like('+id+', "'+code+'")');
-  if ( localStorage.getItem(code) != null ) { $('.item[data-id=' + id +']').addClass('liked'); }
+  newitem.find('.c1').css('background-color', '#'+c1).attr('onclick', 'on_color_click("#' + c1 + '")').find('span').text('#'+c1);
+  newitem.find('.c2').css('background-color', '#'+c2).attr('onclick', 'on_color_click("#' + c2 + '")').find('span').text('#'+c2);
+  newitem.find('.c3').css('background-color', '#'+c3).attr('onclick', 'on_color_click("#' + c3 + '")').find('span').text('#'+c3);
+  newitem.find('.c4').css('background-color', '#'+c4).attr('onclick', 'on_color_click("#' + c4 + '")').find('span').text('#'+c4);
+  newitem.find('.myname span').text(name);
+  // newitem.find('.like').attr('onclick','like('+id+', "'+code+'")');
+  // if ( localStorage.getItem(code) != null ) { $('.item[data-id=' + id +']').addClass('liked'); }
   time = moment(date, "MM/DD/YYYY").fromNow();
   newitem.find('.date').text(time);
-  newitem.css('animation-delay', order*50+"ms");
+  newitem.css('animation-delay', order*100+"ms");
 }
 
 function like(id, code) {
