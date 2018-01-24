@@ -15,7 +15,7 @@ function run_items() {
 }
 
 function itemer(order, id, code, date, name) {
-  var newitem = $('#bank .item').clone().appendTo('#feed').attr('data-order', order).attr('data-id', id).attr('data-code', code);
+  var newitem = $('#bank .item').clone().appendTo('#feed_wrapper').attr('data-order', order).attr('data-id', id).attr('data-code', code);
   var c1 = code.substring(0,6);
   var c2 = code.substring(6,12);
   var c3 = code.substring(12,18);
