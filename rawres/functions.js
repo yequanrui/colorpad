@@ -14,18 +14,19 @@ function run_items() {
   }
 }
 
-function itemer(order, id, code, date, likes) {
+function itemer(order, id, code, date, name) {
   var newitem = $('#bank .item').clone().appendTo('#feed').attr('data-order', order).attr('data-id', id).attr('data-code', code);
   var c1 = code.substring(0,6);
   var c2 = code.substring(6,12);
   var c3 = code.substring(12,18);
   var c4 = code.substring(18,24);
-  newitem.find('.palette a').attr('href', '/c/'+id);
+  // newitem.find('.palette a').attr('href', '/c/'+id);
+  // newitem.find('.palette a').attr('href', '/c/'+id)
   newitem.find('.c1').css('background-color', '#'+c1).find('span').text('#'+c1);
   newitem.find('.c2').css('background-color', '#'+c2).find('span').text('#'+c2);
   newitem.find('.c3').css('background-color', '#'+c3).find('span').text('#'+c3);
   newitem.find('.c4').css('background-color', '#'+c4).find('span').text('#'+c4);
-  newitem.find('.like span').text(formatThousands(likes));
+  newitem.find('.like span').text(name);
   newitem.find('.like').attr('onclick','like('+id+', "'+code+'")');
   if ( localStorage.getItem(code) != null ) { $('.item[data-id=' + id +']').addClass('liked'); }
   time = moment(date, "MM/DD/YYYY").fromNow();

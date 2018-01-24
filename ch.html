@@ -8,12 +8,14 @@
     <link rel="icon" href="res/logo.png" type="image/png">
     <meta name="description" content="一起创造美丽的配色方案，设计师专门色彩手册。">
     <link href="res/newstyle.css" rel="stylesheet" type="text/css">
-    <link href="res/mystyle.css" rel="stylesheet" type="text/css">
+    <link href="res/common.css" rel="stylesheet" type="text/css">
 
     <script src="rawres/jquery-latest.min.js"></script>
     <script src="rawres/functions.js"></script>
     <script src="rawres/moment.js"></script>
-    <link href="//at.alicdn.com/t/font_552517_sdkvmcn25z2rzfr.css" rel="stylesheet" type="text/css" >
+    <link href="//at.alicdn.com/t/font_552517_91246as8wb87iudi.css" rel="stylesheet" type="text/css" >
+    <link href="res/animate.css" rel="stylesheet" type="text/css" >
+
     <style></style>
 </head>
 <body>
@@ -23,23 +25,6 @@
         <a href="/" id="logo">
             <img src="./res/logo.png">Color Pad
         </a>
-        <!--<a id="sort">-->
-            <!--<span>random</span>-->
-            <!--<img src="rawres/icon_dropdown.png">-->
-        <!--</a>-->
-        <!--<div id="sort_menu" class="shadow block dropdown">-->
-            <!--<a id="sort">-->
-            <!--</a>-->
-            <!--<a data-button="random" class="button selected" href="http://www.colorhunt.co/">random</a>-->
-            <!--<a data-button="preset" class="button" href="http://www.colorhunt.co/hot">CH</a>-->
-            <!--<a data-button="日本传统色彩" class="button" href="http://www.colorhunt.co/popular">日本传统色彩</a>-->
-            <!--<a data-button="中国古典色彩" class="button" href="http://www.colorhunt.co/random">中国古典色彩</a>-->
-            <!--<a data-button="新海诚" class="button" href="http://www.colorhunt.co/random">新海诚</a>-->
-            <!--<a data-button="黑白灰" class="button" href="http://www.colorhunt.co/random">黑白灰</a>-->
-            <!--<a data-button="cowboy bebop" class="button" href="http://www.colorhunt.co/random">cowboy bebop</a>-->
-            <!--<a data-button="地中海风格" class="button" href="http://www.colorhunt.co/random">地中海风格</a>-->
-            <!--<a data-button="商务色彩" class="button" href="http://www.colorhunt.co/random">商务色彩</a>-->
-        <!--</div>-->
 
         <div id="menu">
             <img src="rawres/icon_menu.png">
@@ -56,37 +41,13 @@
 </div>
 
 <div id="container" class="wrap">
-    <div id="left">
-        <div class="sub-title left">Selected</div>
+    <div id="left" >
+        <div class="action-bar label-col">SELECTED</div>
 
-        <div class="selected-wrap">
-            <div class="selected-item shadow">
-                <div class="color-line">
+        <div class="selected-wrap" id="selected_wrap" style="opacity: 0; transition-duration: 1s;">
+            <div class="selected-item shadow" id="selected_pool">
+                <div class="color-line" id="color_line_template" style="">
                     <div class="color-cube" style="background-color: #900D0D;"></div>
-                    <span class="color-text shallow">#900d0d</span>
-                    <i class="shallow copy-button iconfont icon-copy" ></i>
-                    <i class="shallow delete-icon iconfont icon-close" ></i>
-                </div>
-
-                <div class="color-line">
-                    <div class="color-cube" style="background-color:  #CF1B1B;"></div>
-
-                    <span class="color-text shallow">#900d0d</span>
-                    <i class="shallow copy-button iconfont icon-copy" ></i>
-                    <i class="shallow delete-icon iconfont icon-close" ></i>
-                </div>
-
-                <div class="color-line">
-                    <div class="color-cube" style="background-color: #FD2E2E"></div>
-
-                    <span class="color-text shallow">#900d0d</span>
-                    <i class="shallow copy-button iconfont icon-copy" ></i>
-                    <i class="shallow delete-icon iconfont icon-close" ></i>
-                </div>
-
-                <div class="color-line">
-                    <div class="color-cube" style="background-color: #FFFBCC"></div>
-
                     <span class="color-text shallow">#900d0d</span>
                     <i class="shallow copy-button iconfont icon-copy" ></i>
                     <i class="shallow delete-icon iconfont icon-close" ></i>
@@ -94,51 +55,17 @@
 
             </div>
 
-
-            <div class="selected-item shadow">
-                <div class="color-line">
-                    <div class="color-cube" style="background-color: #900D0D;"></div>
-                    <span class="color-text shallow">#900d0d</span>
-                    <i class="shallow copy-button iconfont icon-copy" ></i>
-                    <i class="shallow delete-icon iconfont icon-close" ></i>
-                </div>
-
-                <div class="color-line">
-                    <div class="color-cube" style="background-color:  #CF1B1B;"></div>
-
-                    <span class="color-text shallow">#900d0d</span>
-                    <i class="shallow copy-button iconfont icon-copy" ></i>
-                    <i class="shallow delete-icon iconfont icon-close" ></i>
-                </div>
-
-                <div class="color-line">
-                    <div class="color-cube" style="background-color: #FD2E2E"></div>
-
-                    <span class="color-text shallow">#900d0d</span>
-                    <i class="shallow copy-button iconfont icon-copy" ></i>
-                    <i class="shallow delete-icon iconfont icon-close" ></i>
-                </div>
-
-                <div class="color-line">
-                    <div class="color-cube" style="background-color: #FFFBCC"></div>
-
-                    <span class="color-text shallow">#900d0d</span>
-                    <i class="shallow copy-button iconfont icon-copy" ></i>
-                    <i class="shallow delete-icon iconfont icon-close" ></i>
-                </div>
-
-            </div>
         </div>
 
     </div>
     <div id="feed">
-        <div class="sub-title right">Nihon Colors
+        <div class="action-bar ">
 
             <a id="sort">
-                <span>random</span>
-                <img src="rawres/icon_dropdown.png">
+
+                <span class="label-col">CH</span><img src="rawres/icon_dropdown.png">
             </a>
-            <div id="sort_menu" class="shadow block dropdown">
+            <div id="sort_menu" class="shadow block dropdown ">
                 <a id="sort">
                 </a>
                 <a data-button="random" class="button selected" >random</a>
@@ -151,6 +78,8 @@
                 <a data-button="地中海风格" class="button" >地中海风格</a>
                 <a data-button="商务色彩" class="button" >商务色彩</a>
             </div>
+
+            <div onclick="refresh_content()" class="action-btn "> REFRESH <i class="iconfont icon-8"></i> </div>
         </div>
 
         <div id="feed-wraper">
@@ -158,20 +87,15 @@
             <div class="item block shadow liked" data-order="0" data-id="106460" data-code="fffbccfd2e2ecf1b1b900d0d"
                  style="animation-delay: 0ms;">
                 <div class="palette">
-                    <div class="place c4" style="background-color: rgb(144, 13, 13);"><a
-                            href="http://www.colorhunt.co/c/106460"></a><span>#900d0d</span></div>
-                    <div class="place c3" style="background-color: rgb(207, 27, 27);"><a
-                            href="http://www.colorhunt.co/c/106460"></a><span>#cf1b1b</span></div>
-                    <div class="place c2" style="background-color: rgb(253, 46, 46);"><a
-                            href="http://www.colorhunt.co/c/106460"></a><span>#fd2e2e</span></div>
-                    <div class="place c1" style="background-color: rgb(255, 251, 204);"><a
-                            href="http://www.colorhunt.co/c/106460"></a><span>#fffbcc</span></div>
+                    <div class="place c4" style="background-color: rgb(144, 13, 13);"><a onclick="on_color_click('#900d0d')"
+                            ></a><span>#900d0d</span></div>
+                    <div class="place c3" style="background-color: rgb(207, 27, 27);"><a onclick="on_color_click('#cf1b1b')"></a><span>#cf1b1b</span></div>
+                    <div class="place c2" style="background-color: rgb(253, 46, 46);"><a onclick="on_color_click('#fd2e2e')"></a><span>#fd2e2e</span></div>
+                    <div class="place c1" style="background-color: rgb(255, 251, 204);"><a onclick="on_color_click('#fffbcc')"></a><span>#fffbcc</span></div>
                 </div>
-                <div class="like button" onclick="like(106460, &quot;fffbccfd2e2ecf1b1b900d0d&quot;)">
-                    <img src="rawres/icon-heart.png">
+                <div class="pettle-name" onclick="like(106460, &quot;fffbccfd2e2ecf1b1b900d0d&quot;)">
                     <span>11</span>
                 </div>
-                <span class="date">Today</span>
             </div>
             <div class="item block shadow liked" data-order="1" data-id="106353" data-code="248888e6e6e6e7475ef0d879"
                  style="animation-delay: 50ms;">
@@ -351,6 +275,8 @@
 
 
 <script src="rawres/interactions.js"></script>
+<script src="res/common.js"></script>
+<script src="res/anime.min.js"></script>
 
 
 </body>

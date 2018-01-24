@@ -10,20 +10,24 @@
   display: flex;
 
   align-items:center;
+  height: 40px;
 }
 
 
 .color-cube{
   width: 80px;
-  height: 30px;
+  height: 0px;
   border-radius: 3px;
   margin: 5px;
   flex: 60;
+
+
 }
 
 .color-text{
   margin: 5px;
   flex: 1;
+  display: none;
 
 }
 
@@ -53,8 +57,44 @@
 
 #left{
   flex: 2;
+  max-width: 300px;
 }
 
 #feed{
   flex: 2;
+}
+
+.action-bar{
+  display: flex;
+  margin-left: 12px;
+
+}
+
+#color_line_template{
+  display: none;
+}
+
+.label-col{
+  color: #333;
+}
+
+.action-btn{
+  color: #333;
+  cursor: pointer;
+  /*border: 1px #666 solid;*/
+  /*border-radius: 3px;*/
+  transition-duration: 0.1s;
+}
+
+.action-btn:hover{
+  color: #333;
+}
+
+.action-btn:active{
+  color: #000;
+}
+
+.pettle-name{
+  margin: 5px;
+  color: #BDCDDE;
 }
