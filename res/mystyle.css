@@ -1,0 +1,60 @@
+
+.selected-item{
+  margin: 8px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+
+.color-line{
+  display: flex;
+
+  align-items:center;
+}
+
+
+.color-cube{
+  width: 80px;
+  height: 30px;
+  border-radius: 3px;
+  margin: 5px;
+  flex: 60;
+}
+
+.color-text{
+  margin: 5px;
+  flex: 1;
+
+}
+
+.copy-button{
+  flex: 1;
+  margin: 0px 5px;
+
+}
+.delete-icon{
+  flex: 1;
+  margin: 0px 5px;
+
+}
+
+.shallow{
+  color: #CCC;
+}
+
+.shallow:hover{
+  color: #666;
+}
+
+.shallow:active{
+  color: #000;
+}
+
+
+#left{
+  flex: 2;
+}
+
+#feed{
+  flex: 2;
+}
