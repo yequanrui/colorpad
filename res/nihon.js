@@ -24,8 +24,15 @@ function refresh_content() {
         // generate new
         for(var j = 0; j < 6; j++) {
 
-            var it = random_select(chdata)
-            itemer(j, it.id, it.code, '', "Hot " + it.likes)
+            var it = random_select(color_data)
+
+            var code = it.hex.slice(1)
+            var gstep = 20
+            code += colorDiff(it.hex, -1*gstep, -1*gstep, -1*gstep).slice(1)
+            code += colorDiff(it.hex, -2*gstep, -2*gstep, -2*gstep).slice(1)
+            code += colorDiff(it.hex, -3*gstep, -3*gstep, -3*gstep).slice(1)
+
+            itemer(j, 0, code, it.enname, it.name)
         }
     }, 500)
 

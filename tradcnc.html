@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://www.colorhunt.co/ -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=500">
+    <title>Color Pad - 给你点颜色瞧瞧|中国古典色彩</title>
+    <link rel="icon" href="res/logo.png" type="image/png">
+    <meta name="description" content="一起创造美丽的配色方案，设计师专门色彩手册。">
+    <link href="res/newstyle.css" rel="stylesheet" type="text/css">
+    <link href="res/common.css" rel="stylesheet" type="text/css">
+
+    <script src="rawres/jquery-latest.min.js"></script>
+    <script src="rawres/functions.js"></script>
+    <script src="rawres/moment.js"></script>
+    <link href="//at.alicdn.com/t/font_552517_91246as8wb87iudi.css" rel="stylesheet" type="text/css" >
+    <link href="res/animate.css" rel="stylesheet" type="text/css" >
+
+    <style></style>
+</head>
+<body>
+
+<div id="header" class="soft_shadow">
+    <div class="wrap">
+        <a href="/" id="logo">
+            <img src="./res/logo.png">Color Pad
+        </a>
+
+        <div id="menu">
+            <img src="rawres/icon_menu.png">
+            <div id="main_menu" class="shadow block dropdown">
+                <a data-button="palettes" class="button selected" href="/">ColorPad</a>
+                <div class="seperator"></div>
+                <a data-button="about" class="button" href="/about">About</a>
+                <a data-button="github" target="_blank" class="button" href="http://github.com/fateleak/colorpad">Github</a>
+                <a data-button="afcapp" target="_blank" class="button" href="http://afcapp.boringuniverse.com">A.F.C</a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="container" class="wrap">
+    <div id="left" >
+        <div class="action-bar label-col">SELECTED</div>
+
+        <div class="selected-wrap" id="selected_wrap" style="opacity: 0; transition-duration: 1s;">
+            <div class="selected-item shadow" id="selected_pool">
+                <div class="color-line" id="color_line_template" style="">
+                    <div class="color-cube copy-btn" style="background-color: #900D0D;"></div>
+                    <span class="color-text shallow">#900d0d</span>
+                    <i class="shallow copy-button iconfont icon-copy copy-btn" ></i>
+                    <i class="shallow delete-icon iconfont icon-close" ></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="feed">
+        <div class="action-bar ">
+
+            <a id="sort">
+
+                <span class="label-col">中國古典色彩</span><img src="rawres/icon_dropdown.png">
+            </a>
+            <div id="sort_menu" class="shadow block dropdown ">
+                <a id="sort">
+                </a>
+                <a data-button="random" class="button " >RANDOM</a>
+                <a data-button="preset" class="button " href="/index.html">CH</a>
+                <a data-button="日本传统色彩" class="button" href="/nihon.html">日本の伝統色</a>
+                <a data-button="中国古典色彩" class="button selected" href="/tradcnc.html">中國古典色彩</a>
+                <a data-button="新海诚" class="button" >新海诚</a>
+                <a data-button="cowboy bebop" class="button" >日漫风格色彩</a>
+                <a data-button="地中海风格" class="button" >地中海风格</a>
+                <a data-button="黑白灰" class="button" >黑白灰</a>
+                <a data-button="商务色彩" class="button" >商务风格</a>
+                <a data-button="色彩的性格" class="button" >色彩的性格</a>
+                <a data-button="风景的色彩" class="button" >四季与大地</a>
+                <a data-button="风景的色彩" class="button" >花的颜色</a>
+
+            </div>
+
+            <div onclick="refresh_content()" class="action-btn "> REFRESH <i class="iconfont icon-8"></i> </div>
+        </div>
+
+        <div id="feed_wrapper">
+
+        </div>
+    </div>
+
+</div>
+
+<div id="bank" style="display:none">
+    <div class="item block shadow">
+        <div class="palette">
+            <div class="place c4"><a ></a><span></span></div>
+            <div class="place c3"><a ></a><span></span></div>
+            <div class="place c2"><a ></a><span></span></div>
+            <div class="place c1"><a ></a><span></span></div>
+        </div>
+        <div class="myname">
+            <span class="card_text_1"></span><span class="card_text_2"></span>
+        </div>
+    </div>
+    <div class="remove"><img src="rawres/icon_remove.png"></div>
+</div>
+
+
+<script src="res/color_cn.js"></script>
+<script src="rawres/interactions.js"></script>
+<script src="res/common.js"></script>
+<script src="res/anime.min.js"></script>
+<script src="res/tradcnc.js"></script>
+<script src="res/clipboard.min.js"></script>
+
+<audio>
+    <source src="res/beep.mp3"></source>
+</audio>
+</body>
+<div></div>
+</html>
