@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var G_SELECTED_COLOR_ARR = []
 function selected_load() {
+    if (localStorage.getItem('flag')){
+    } else {
+        localStorage.setItem('data', '#dff5f2=#87dfd6=#51dacf=#48829e') //预置选中的色彩
+        localStorage.setItem('flag', 'true')
+    }
+
     console.log("load selected colors")
     if (localStorage.getItem('data')){
         G_SELECTED_COLOR_ARR = localStorage.getItem('data').split('=')

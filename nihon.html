@@ -5,18 +5,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="user-scalable=no, width=500">
     <title>Color Pad - 给你点颜色瞧瞧|日本传统色彩</title>
-    <link rel="icon" href="res/logo.png" type="image/png">
-    <meta name="description" content="一起创造美丽的配色方案，设计师专门色彩手册。">
+    <link rel="icon" href="res/favicon.png" type="image/png">
+    <meta name="description" content="ヾ(@゜∇゜@)ノ一起创造美丽的配色方案，设计师专门色彩搭配手册。ヾ(@゜∇゜@)ノ">
     <link href="res/newstyle.css" rel="stylesheet" type="text/css">
     <link href="res/common.css" rel="stylesheet" type="text/css">
 
     <script src="rawres/jquery-latest.min.js"></script>
     <script src="rawres/functions.js"></script>
     <script src="rawres/moment.js"></script>
-    <link href="//at.alicdn.com/t/font_552517_91246as8wb87iudi.css" rel="stylesheet" type="text/css" >
+    <link href="http://at.alicdn.com/t/font_552517_91246as8wb87iudi.css" rel="stylesheet" type="text/css" >
     <link href="res/animate.css" rel="stylesheet" type="text/css" >
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111452095-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    <style></style>
+        gtag('config', 'UA-111452095-4');
+    </script>
 </head>
 <body>
 
@@ -31,11 +38,9 @@
             <div id="main_menu" class="shadow block dropdown">
                 <a data-button="palettes" class="button selected" href="/">ColorPad</a>
                 <div class="seperator"></div>
-                <a data-button="about" class="button" href="/about">About</a>
+                <a data-button="about" class="button" target="_blank" href="http://boringuniverse.com">About</a>
                 <a data-button="github" target="_blank" class="button" href="http://github.com/fateleak/colorpad">Github</a>
                 <a data-button="afcapp" target="_blank" class="button" href="http://afcapp.boringuniverse.com">A.F.C</a>
-
-
             </div>
         </div>
     </div>
@@ -69,18 +74,17 @@
             <div id="sort_menu" class="shadow block dropdown ">
                 <a id="sort">
                 </a>
-                <a data-button="random" class="button " >RANDOM</a>
-                <a data-button="preset" class="button " >CH</a>
-                <a data-button="日本传统色彩" class="button selected" >日本の伝統色</a>
-                <a data-button="中国古典色彩" class="button" >中国古典色彩</a>
-                <a data-button="新海诚" class="button" >新海诚</a>
-                <a data-button="cowboy bebop" class="button" >日漫风格色彩</a>
-                <a data-button="地中海风格" class="button" >地中海风格</a>
-                <a data-button="黑白灰" class="button" >黑白灰</a>
-                <a data-button="商务色彩" class="button" >商务风格</a>
-                <a data-button="色彩的性格" class="button" >色彩的性格</a>
-                <a data-button="风景的色彩" class="button" >四季与大地</a>
-                <a data-button="风景的色彩" class="button" >花的颜色</a>
+                <!--<a data-button="random" class="button " >RANDOM</a>-->
+                <a data-button="CH" class="button selected" href="/index.html" >RANDOM</a>
+                <a data-button="日本传统色彩" class="button selected" href="/nihon.html">日本の伝統色</a>
+                <a data-button="中国古典色彩" class="button" href="/tradcnc.html">中国古典色彩</a>
+                <a data-button="中国古典色彩" class="button" href="/named-warm.html">具名暖色调</a>
+                <a data-button="中国古典色彩" class="button" href="/named-cold.html">具名冷色调</a>
+                <a data-button="中国古典色彩" class="button" href="/named-gray.html">黑白灰</a>
+                <a data-button="中国古典色彩" class="button" href="/named-blue.html">商务兰</a>
+                <a data-button="色彩的性格" class="button" >色彩的性格(ua)</a>
+                <a data-button="cowboy bebop" class="button" >日漫风格色彩(ua)</a>
+                <a data-button="地中海风格" class="button" >欧洲古典风格(ua)</a>
 
             </div>
 
@@ -118,8 +122,7 @@
 <script src="res/clipboard.min.js"></script>
 
 <audio>
-    <source src="res/beep.mp3"></source>
+    <source src="res/beep.mp3" />
 </audio>
 </body>
-<div></div>
 </html>
