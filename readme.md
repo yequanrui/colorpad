@@ -1,4 +1,4 @@
-[ColorPad.cn ](http://colorpad.netqon.com)
+[ColorPad](yequanrui.github.io/colorpad/)
 
 全球最佳的色彩搭配工具。腾讯、百度、阿里巴巴TOP UI 设计师推荐！！！
 
@@ -14,10 +14,6 @@
 
 - **做中国最好的配色方案共享网站！！！**[colorpad.netqon.com](htt://colorpad.netqon.com)
 
-  ​
-
-![](res/a.png)
-
-
+![page](res/a.png)
 
 (c) 2018 [boringuniverse.com](boringuniverse.com)

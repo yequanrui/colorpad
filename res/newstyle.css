@@ -1,64 +1,64 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
 
 * {
-  transition: all 0.2s cubic-bezier(0.800, 0.000, 0.200, 1.000);
+  transition: all 0.2s cubic-bezier(0.8, 0, 0.2, 1);
 }
 
 body {
-  margin:0;
+  margin: 0;
   color: #263646;
   font-family: 'Source Sans Pro', 'Arial';
-  font-size:16px;
-  padding:60px 0 100px;
-  animation-name:fade;
-  animation-duration:0.5s;
+  font-size: 16px;
+  padding: 60px 0 100px;
+  animation-name: fade;
+  animation-duration: 0.5s;
 }
 
 h2 {
   font-size: 28px;
-  font-weight:400;
+  font-weight: 400;
 }
 
 input {
-  display:block;
+  display: block;
   height: 36px;
-  border-radius:4px;
-  border:1px solid #BDCDDE;
-  padding-left:10px;
-  margin-top:10px;
-  outline:none;
-  width:100%;
+  border-radius: 4px;
+  border: 1px solid #bdcdde;
+  padding-left: 10px;
+  margin-top: 10px;
+  outline: none;
+  width: 100%;
   box-sizing: border-box;
 }
 
 ::-webkit-input-placeholder {
-  color: #BDCDDE;
+  color: #bdcdde;
 }
 
 input:focus {
-  border-color: #90ABC5;
+  border-color: #90abc5;
 }
 
 .block {
-    background-color:white;
+  background-color: white;
 }
 
 .button {
-  line-height:36px;
-  padding:0 12px;
-  display:inline-block;
-  border-radius:4px;
-  cursor:pointer;
+  line-height: 36px;
+  padding: 0 12px;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
   transition: all 0.1s;
   box-sizing: border-box;
-  text-align:center;
+  text-align: center;
   background-color: white;
-  border:1px solid #e9f2f9;
+  border: 1px solid #e9f2f9;
 }
 
 .button:hover {
-  color:black;
-  background-color:#F5FCFF;
+  color: black;
+  background-color: #f5fcff;
 }
 
 .button:active {
@@ -66,123 +66,127 @@ input:focus {
 }
 
 .button.strong {
-  background-color:#263646;
-  color:white;
-  border:none;
+  background-color: #263646;
+  color: white;
+  border: none;
 }
 
 .button.strong:hover {
-  filter:brightness(130%);
+  filter: brightness(130%);
 }
 
 .shadow {
-  box-shadow: 0px 10px 40px -10px rgba(0,64,128,0.2);
+  box-shadow: 0px 10px 40px -10px rgba(0, 64, 128, 0.2);
 }
 
 .soft_shadow {
-    box-shadow: 0px 5px 10px 0px rgba(0,64,128,0.05)
+  box-shadow: 0px 5px 10px 0px rgba(0, 64, 128, 0.05);
 }
 
 .hide {
-  display:none
+  display: none;
 }
 
 .wrap {
-  max-width:1640px;
-  margin:0 auto;
-  position:relative;
+  max-width: 1640px;
+  margin: 0 auto;
+  position: relative;
 }
 
 a {
-  color:black;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color:black;
+  color: black;
 }
 
 #header {
-  width:100%;
-  height:50px;
-  line-height:50px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
   position: fixed;
-  z-index:2;
-  top:0;
-  background-color:white;
+  z-index: 2;
+  top: 0;
+  background-color: white;
 }
 
 #logo {
-  font-weight:600;
-  padding-left:60px;
+  font-weight: 600;
+  padding-left: 60px;
   padding-right: 10px;
 }
 
 #logo img {
   width: 38px;
   position: absolute;
-  top:12px;
-  left:12px;
+  top: 12px;
+  left: 12px;
 }
 
 #sort {
   padding: 0 10px;
   padding-left: 0px;
-  cursor:pointer;
+  line-height: 1.5;
+  cursor: pointer;
 }
 
 #sort img {
-  width:12px;
-  margin-left:3px;
+  width: 12px;
+  margin-left: 3px;
 }
 
 .dropdown {
   position: absolute;
-  border-radius:0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
   overflow: hidden;
-  display:none;
-  font-size:14px;
+  display: none;
+  font-size: 14px;
   animation-name: drop;
-  animation-duration:0.2s;
+  animation-duration: 0.2s;
   transform-origin: top;
-  border-top:1px solid #e9f2f9;
+  border-top: 1px solid #e9f2f9;
 }
 
 @keyframes drop {
-  0% { transform: scaleY(0.5); opacity:0; }
+  0% {
+    transform: scaleY(0.5);
+    opacity: 0;
+  }
 }
 
 .dropdown a {
-  text-align:left;
-  display:block;
-  line-height:36px;
-  padding:0 80px 0 20px;
-  margin:0;
+  text-align: left;
+  display: block;
+  line-height: 36px;
+  padding: 0 80px 0 20px;
+  margin: 0;
   border-radius: 0;
-  border:none;
+  border: none;
 }
 
 .dropdown a.selected {
-  color:#BDCDDE;
+  color: #bdcdde;
 }
 
 .dropdown .seperator {
-  background-color:#e9f2f9;
-  height:1px;
+  background-color: #e9f2f9;
+  height: 1px;
 }
 
 #sort_menu {
-  left:260px;
-  top:30px;
+  left: 260px;
+  top: 30px;
   z-index: 1;
 }
 
 #menu {
   position: absolute;
-  top:0;
-  right:0;
-  padding:0 10px;
-  cursor:pointer;
+  top: 0;
+  right: 0;
+  padding: 0 10px;
+  cursor: pointer;
 }
 
 #menu:hover img {
@@ -190,13 +194,13 @@ a:hover {
 }
 
 #menu img {
-  width:26px;
+  width: 26px;
   position: relative;
-  top:-2px;
+  top: -2px;
 }
 
 #main_menu {
-  right:10px;
+  right: 10px;
 }
 
 #container {
@@ -206,7 +210,7 @@ a:hover {
 }
 
 #jscode {
-  display:none
+  display: none;
 }
 
 #feed {
@@ -215,39 +219,38 @@ a:hover {
   width: 90%;
 }
 
-#feed-wraper{
-
+#feed-wraper {
   display: flex;
   /*width: 90%;*/
   flex-wrap: wrap;
 }
 
 .item {
-  width:260px;
-  margin:8px;
-  border-radius:8px;
-  padding:15px;
+  width: 260px;
+  margin: 8px;
+  border-radius: 8px;
+  padding: 15px;
   box-sizing: border-box;
   position: relative;
-  animation-name:item;
+  animation-name: item;
   animation-duration: 0.4s;
-  display:inline-block;
-  text-align:left;
-  animation-fill-mode:backwards;
+  display: inline-block;
+  text-align: left;
+  animation-fill-mode: backwards;
 }
 
 .item.focus {
-  width:97.5%;
-  display:block
+  width: 97.5%;
+  display: block;
 }
 
 .item .like {
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .item.liked .like {
-    background-color:#F5FCFF;
-    color:#70A1D4;
+  background-color: #f5fcff;
+  color: #70a1d4;
 }
 
 .item.liked .like img {
@@ -255,110 +258,120 @@ a:hover {
 }
 
 @keyframes item {
-  0% { opacity: 0;  }
+  0% {
+    opacity: 0;
+  }
 }
 
 .palette {
-  max-width:100%;
-  padding-bottom:100%;
-  border-radius:6px;
-  position:relative;
-  display:block
+  max-width: 100%;
+  padding-bottom: 100%;
+  border-radius: 6px;
+  position: relative;
+  display: block;
 }
 
 .palette a {
-  width:100%;
-  height:100%;
-  display:block;
-  position:absolute
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
 }
 
 .item.focus .palette {
-  padding-bottom:50%
+  padding-bottom: 50%;
 }
 
 .place {
-  position:absolute;
-  width:100%;
+  position: absolute;
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
-  animation-name:place;
+  animation-name: place;
   transform-origin: top;
 }
 
 @keyframes place {
-  0% { transform: scaleY(1.2); filter: brightness(300%); filter: hue-rotate(50deg); }
+  0% {
+    transform: scaleY(1.2);
+    filter: brightness(300%);
+    filter: hue-rotate(50deg);
+  }
 }
 
 .place span {
-  position:absolute;
-  text-align:center;
-  display:block;
-  bottom:0;
-  color:white;
-  opacity:0;
-  text-transform:uppercase;
-  background-color:rgba(0,0,0,0.1);
-  padding:3px 6px 3px 6px;
-  border-radius:0px 3px 0px 0px;
+  position: absolute;
+  text-align: center;
+  display: block;
+  bottom: 0;
+  color: white;
+  opacity: 0;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 3px 6px 3px 6px;
+  border-radius: 0px 3px 0px 0px;
 }
 
 .c1 {
-  padding-bottom:41%;
+  padding-bottom: 41%;
   border-radius: 4px 4px 0px 0px;
   animation-duration: 1s;
 }
 
 .focus .c1 {
-  padding-bottom:20.5%;
+  padding-bottom: 20.5%;
 }
 
 .c2 {
-  padding-bottom:67%;
+  padding-bottom: 67%;
   animation-duration: 0.6s;
 }
 
 .focus .c2 {
-  padding-bottom:33.5%;
+  padding-bottom: 33.5%;
 }
 
 .c3 {
-  padding-bottom:85%;
+  padding-bottom: 85%;
   animation-duration: 0.2s;
 }
 
 .focus .c3 {
-  padding-bottom:42.5%;
+  padding-bottom: 42.5%;
 }
 
 .c4 {
-  padding-bottom:100%;
+  padding-bottom: 100%;
   border-radius: 20px 20px 4px 4px;
   animation-duration: 0s;
 }
 
 .focus .c4 {
-  padding-bottom:50%;
+  padding-bottom: 50%;
 }
 
 .place:hover span {
-  opacity:1;
-  letter-spacing:1px
+  opacity: 1;
+  letter-spacing: 1px;
 }
 
 .like img {
-  width:18px;
-  margin-right:5px;
-  position:relative;
-  top:2px;
-  animation-name:heart;
-  animation-duration:0.5s;
-  animation-delay:0.3s;
-  animation-fill-mode:backwards;
+  width: 18px;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+  animation-name: heart;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes heart {
-  0% { transform: scale(0); }
-  50% { transform: scale(1.2) }
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 .like span {
@@ -373,45 +386,45 @@ a:hover {
 }
 
 .date {
-  font-size:12px;
+  font-size: 12px;
   position: absolute;
-  right:20px;
-  bottom:26px;
-  color:#BDCDDE;
+  right: 20px;
+  bottom: 26px;
+  color: #bdcdde;
   animation-name: fade;
   animation-duration: 1s;
   animation-fill-mode: backwards;
 }
 
 #side {
-  width:220px;
+  width: 220px;
   /*position: fixed;*/
-  top:78px;
-  font-size:14px;
-  direction:ltr;
-  margin-right:10px;
+  top: 78px;
+  font-size: 14px;
+  direction: ltr;
+  margin-right: 10px;
   animation-name: fade;
-  animation-duration:1s
+  animation-duration: 1s;
 }
 
 #side .section {
-  margin-bottom:24px;
+  margin-bottom: 24px;
   box-sizing: border-box;
 }
 
 #side a:hover {
-  text-decoration: underline ;
+  text-decoration: underline;
 }
 
 #likes {
-  display:none;
+  display: none;
 }
 
 #likes .list {
-  max-height:114px;
-  margin:10px -5px 0;
-  overflow-y:scroll;
-  width:233px;
+  max-height: 114px;
+  margin: 10px -5px 0;
+  overflow-y: scroll;
+  width: 233px;
   transition: all 0.5s;
 }
 
@@ -421,192 +434,215 @@ a:hover {
 
 #likes .list::-webkit-scrollbar-thumb {
   background-color: #ffffff;
-  border-radius:4px;
+  border-radius: 4px;
 }
 
 #likes:hover .list::-webkit-scrollbar-thumb {
-  background-color: #BDCDDE;
+  background-color: #bdcdde;
 }
 
 #likes .palette {
-  width:49px;
-  height:49px;
-  display:inline-block;
-  padding-bottom:0;
-  animation-duration:0.4s;
-  margin:2px 4px;
+  width: 49px;
+  height: 49px;
+  display: inline-block;
+  padding-bottom: 0;
+  animation-duration: 0.4s;
+  margin: 2px 4px;
   transform-origin: top right;
   position: relative;
 }
 
 #likes .remove {
   position: absolute;
-  right:2px;
-  top:2px;
-  width:15px;
-  height:15px;
-  border-radius:5px;
-  background-color:rgba(0,0,0,0.2);
-  cursor:pointer;
-  opacity:0;
-  transform:scale(0);
+  right: 2px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0);
 }
 
 #likes .remove img {
-  width:7px;
+  width: 7px;
   position: relative;
-  top:-4px;
-  left:4px;
+  top: -4px;
+  left: 4px;
 }
 
 #likes .palette:hover .remove {
-  opacity:1;
+  opacity: 1;
   transform: scale(1);
 }
 
 #likes .remove:hover {
-  background-color:rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @keyframes liked_palettes {
-  0% { width:0px; height:0px; filter: blur(3px); transform: scale(0); filter:brightness(200%); }
+  0% {
+    width: 0px;
+    height: 0px;
+    filter: blur(3px);
+    transform: scale(0);
+    filter: brightness(200%);
+  }
 }
 
 #subscribe .button {
-  width:100%;
-  margin-top:10px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 #subscribe #loader {
-  display:none;
-  background-color: #BDCDDE;
+  display: none;
+  background-color: #bdcdde;
   position: relative;
-  height:6px;
-  border-radius:4px;
-  margin:25px 0 15px;
+  height: 6px;
+  border-radius: 4px;
+  margin: 25px 0 15px;
 }
 
 #subscribe #loader .bar {
-  background-color:#263646;
-  width:100%;
-  border-radius:4px;
-  height:100%;
-  animation-name:bar;
-  animation-duration:0.5s;
+  background-color: #263646;
+  width: 100%;
+  border-radius: 4px;
+  height: 100%;
+  animation-name: bar;
+  animation-duration: 0.5s;
 }
 
 @keyframes bar {
-  from { width:0% }
+  from {
+    width: 0%;
+  }
 }
 
 #subscribe .thanks {
-  display:none
+  display: none;
 }
 
-#subscribe #error, #subscribe .thanks {
-  font-size:12px;
-  margin-top:10px;
-  display:none;
+#subscribe #error,
+#subscribe .thanks {
+  font-size: 12px;
+  margin-top: 10px;
+  display: none;
 }
 
 #subscribe input.success {
-  background-color:#F2FFF8;
-  border-color:#8EE8A2;
-  color:#80C39F;
+  background-color: #f2fff8;
+  border-color: #8ee8a2;
+  color: #80c39f;
 }
 
 #ad {
-  text-align:center;
+  text-align: center;
   border: 1px solid #e9f2f9;
-  padding:10px;
-  border-radius:4px;
-  font-size:12px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
 }
 
 #ad img {
-  border-radius:4px;
+  border-radius: 4px;
 }
 
 #ad .carbon-text {
-  display:block;
+  display: block;
   margin: 5px 0 5px;
 }
 
 #ad .carbon-poweredby {
-  opacity:0.3;
+  opacity: 0.3;
 }
 
 #extension {
-  margin-top:20px;
-  border:none;
+  margin-top: 20px;
+  border: none;
 }
 
 #extension .button {
-  margin-top:10px;
-  width:100%;
+  margin-top: 10px;
+  width: 100%;
 }
 
 #extension .button img {
-  width:16px;
+  width: 16px;
   position: relative;
-  top:3px;
-  margin-right:6px;
+  top: 3px;
+  margin-right: 6px;
 }
 
 #credit {
-  font-size:12px;
-  color: #BDCDDE;
-  margin-top:-10px;
+  font-size: 12px;
+  color: #bdcdde;
+  margin-top: -10px;
 }
 
 #credit img {
-  width:11px;
+  width: 11px;
 }
 
 #credit a {
-  color: #BDCDDE;
+  color: #bdcdde;
 }
 
 @keyframes fade {
-  0% { opacity:0; }
+  0% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1640px) {
-    .wrap { max-width:1240px;}
+  .wrap {
+    max-width: 1240px;
+  }
 }
 
 @media screen and (max-width: 1360px) {
-    .wrap { max-width:1180px;}
+  .wrap {
+    max-width: 1180px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
   #feed {
-    margin:0;
+    margin: 0;
     /*text-align:center;*/
   }
   .item {
-    width:234px
+    width: 234px;
   }
   #side {
-    display:none
+    display: none;
   }
-  #main_menu [data-button="create"] {
-    display:none
+  #main_menu [data-button='create'] {
+    display: none;
   }
 }
 
 @media screen and (min-height: 800px) {
-    #likes .list { max-height:172px;}
+  #likes .list {
+    max-height: 172px;
+  }
 }
 
 @media screen and (min-height: 900px) {
-    #likes .list { max-height:226px;}
+  #likes .list {
+    max-height: 226px;
+  }
 }
 
 @media screen and (min-height: 1000px) {
-    #likes .list { max-height:280px;}
+  #likes .list {
+    max-height: 280px;
+  }
 }
 
 @media screen and (min-height: 1100px) {
-    #likes .list { max-height:340px;}
+  #likes .list {
+    max-height: 340px;
+  }
 }

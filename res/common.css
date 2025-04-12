@@ -1,103 +1,93 @@
-
-.selected-item{
+.selected-item {
   margin: 8px;
   padding: 8px;
   border-radius: 5px;
 }
 
-
-.color-line{
+.color-line {
   display: flex;
-
-  align-items:center;
+  align-items: center;
   height: 40px;
 }
 
-
-.color-cube{
+.color-cube {
   width: 80px;
   height: 0px;
   border-radius: 3px;
   margin: 5px;
   flex: 60;
-
-
 }
 
-.color-text{
+.color-text {
   margin: 5px;
   flex: 1;
   display: none;
-
 }
 
-.copy-button{
+.copy-button {
   flex: 1;
   margin: 0px 5px;
-
 }
-.delete-icon{
+
+.delete-icon {
   flex: 1;
   margin: 0px 5px;
-
 }
 
-.shallow{
-  color: #CCC;
+.shallow {
+  color: #ccc;
 }
 
-.shallow:hover{
+.shallow:hover {
   color: #666;
 }
 
-.shallow:active{
+.shallow:active {
   color: #000;
 }
 
-
-#left{
+#left {
   flex: 2;
   max-width: 300px;
 }
 
-#feed{
+#feed {
   flex: 2;
 }
 
-.action-bar{
+.action-bar {
   display: flex;
   margin-left: 19px;
-
 }
 
-#color_line_template{
+#color_line_template {
   display: none;
 }
 
-.label-col{
+.label-col {
   color: #333;
 }
 
-.action-btn{
+.action-btn {
+  line-height: 1.5;
   color: #333;
   cursor: pointer;
-  /*border: 1px #666 solid;*/
-  /*border-radius: 3px;*/
   transition-duration: 0.1s;
 }
 
-.action-btn:hover{
+.action-btn:hover {
   color: #333;
 }
 
-.action-btn:active{
+.action-btn:active {
   color: #000;
 }
 
-.myname{
+.myname {
   margin-top: 10px;
-  color: #BDCDDE;
+  color: #bdcdde;
 }
-.date{
+
+.date {
   margin-top: 5px;
 }
